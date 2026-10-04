@@ -66,12 +66,14 @@ claude plugin marketplace remove windstream
 
 ## Using the wind CLI as well?
 
-`wind setup` registers its own Wind Stream MCP server, named `windstream`. With the
-plugin installed too, Claude Code has two Wind Stream servers and lists every Wind
-Stream tool twice. Nothing breaks, but the duplicate tools take up room in every
-conversation.
+`wind setup` registers its own Wind Stream MCP server, named `windstream`. The two work
+together: when a Wind Stream server is already configured at the same address, Claude
+Code uses that one and does not load the plugin's copy, so the tools appear once.
+`claude mcp list` then shows `windstream` and no `plugin:windstream:windstream` line,
+and the connection uses the token `wind` manages. The plugin's token option goes
+unused.
 
-If you use `wind`, you already have the connection and do not need this plugin.
+With `wind`, the plugin adds the two skills. You do not need it for the connection.
 
 ## Troubleshooting
 

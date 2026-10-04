@@ -53,8 +53,10 @@ a new token and set it again as described in the guide for your client.
 
 ## Using the wind CLI?
 
-`wind setup` already connects Wind Stream to Claude Code and Codex. You do not need
-this plugin for the connection. See the guide for your client before installing both.
+`wind setup` already connects Wind Stream to Claude Code and Codex, so you do not need
+this plugin for the connection. Installing both is safe: each client keeps a single
+Wind Stream server, and the plugin adds its skills. The guide for your client has the
+details.
 
 ## Support
 

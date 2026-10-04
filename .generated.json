@@ -12,6 +12,7 @@
     "plugins/windstream/.claude-plugin/plugin.json",
     "plugins/windstream/.codex-plugin/plugin.json",
     "plugins/windstream/.mcp.json",
+    "plugins/windstream/LICENSE.md",
     "plugins/windstream/README.md",
     "plugins/windstream/codex.mcp.json",
     "plugins/windstream/skills/ask/SKILL.md",

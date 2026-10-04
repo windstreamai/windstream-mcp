@@ -11,7 +11,7 @@ The install reports one option not yet set: your Wind Stream token.
 
 ## Set your token
 
-Get a token from Wind Stream (**Settings**, then **MCP Token**; see the
+Get a token from Wind Stream (**Settings**, then **API Tokens**; see the
 [README](../README.md#get-a-token)).
 
 Start Claude Code and run:
@@ -20,11 +20,11 @@ Start Claude Code and run:
 /plugin configure windstream@windstream
 ```
 
-Paste the token when asked. Claude Code keeps it in your system's secure storage, not
-in a settings file. Restart Claude Code to apply it.
+Paste the token when asked. Claude Code stores it as a secret, separate from your
+settings files; on macOS that is the Keychain. Restart Claude Code to apply it.
 
-To set it from a script instead, pipe it in so the token never appears in your shell
-history:
+To set it from a script instead, pass it on standard input as a JSON object. For
+example, with the token already in an environment variable your script holds:
 
 ```bash
 printf '{"token":"%s"}' "$WINDSTREAM_TOKEN" | claude plugin configure windstream@windstream --values-stdin
@@ -64,21 +64,23 @@ claude plugin uninstall windstream@windstream
 claude plugin marketplace remove windstream
 ```
 
+Uninstalling removes the stored token.
+
 ## Using the wind CLI as well?
 
 `wind setup` registers its own Wind Stream MCP server, named `windstream`. The two work
-together: when a Wind Stream server is already configured at the same address, Claude
-Code uses that one and does not load the plugin's copy, so the tools appear once.
-`claude mcp list` then shows `windstream` and no `plugin:windstream:windstream` line,
-and the connection uses the token `wind` manages. The plugin's token option goes
-unused.
+together: with that server in place, Claude Code uses it and does not load the plugin's
+copy, so the tools appear once. `claude mcp list` then shows `windstream` and no
+`plugin:windstream:windstream` line, and the connection uses the token `wind` manages.
+The plugin's token option goes unused.
 
 With `wind`, the plugin adds the two skills. You do not need it for the connection.
 
 ## Troubleshooting
 
 **`! Needs authentication` in `claude mcp list`.** The token is missing, mistyped or
-expired. Generate a new one in Wind Stream and set it again.
+expired. Tokens expire after 30 days. Generate a new one in Wind Stream and set it
+again.
 
 **No Wind Stream server in `claude mcp list`.** The token option is not set. The
 server loads only once it has a token. Run `/plugin configure windstream@windstream`.

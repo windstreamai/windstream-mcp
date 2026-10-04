@@ -33,7 +33,9 @@ Call `conversation` with:
 - `reference`: the session reference from an earlier Wind Stream response, to continue
   that session. Omit it to start a new one.
 - `context`: the relevant file content, when the question is about specific code. For
-  "does this match what we agreed?", read the file and pass it.
+  "does this match what we agreed?", read the file and pass it. Before you pass file
+  content, tell the user which files you will send: what you pass is saved to a
+  session their team can see.
 
 If Wind Stream reports that several sessions match, show the options to the user, let
 them choose, and send the message again with the chosen `reference` and

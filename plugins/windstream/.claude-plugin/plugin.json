@@ -24,7 +24,7 @@
     "token": {
       "type": "string",
       "title": "Wind Stream MCP token",
-      "description": "Generate a token in Wind Stream under Settings, MCP Token, and paste it here.",
+      "description": "Generate a token in Wind Stream under Settings, API Tokens, and paste it here.",
       "sensitive": true,
       "required": true
     }

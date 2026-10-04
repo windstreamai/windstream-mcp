@@ -10,12 +10,17 @@ your organization's Wind Stream: its sessions, decisions and shared context.
 - `organizational-context` — lets your agent consult Wind Stream when a question turns
   on a team decision.
 
+## What is sent to Wind Stream
+
+Your questions, and any file content your agent passes along with them, are saved to a
+Wind Stream session that your team can see.
+
 ## Requirements
 
 A Wind Stream account in an organization with MCP access enabled, and a Wind Stream
-MCP token. Claude Code asks for the token as a plugin option and stores it in your
-system's secure storage. Codex reads it from the `WINDSTREAM_TOKEN` environment
-variable.
+token. Claude Code asks for the token as a plugin option and stores it as a secret,
+separate from your settings files. Codex reads it from the `WINDSTREAM_TOKEN`
+environment variable.
 
 ## Install, update, uninstall
 
@@ -24,5 +29,5 @@ https://github.com/windstreamai/windstream-mcp
 
 ## Support and terms
 
-success@windstream.ai. Use is governed by the Wind Stream Terms of Service:
-https://windstream.ai/terms-of-service
+success@windstream.ai. Use is governed by the Wind Stream Terms of Service
+(https://windstream.ai/terms-of-service); see [LICENSE.md](LICENSE.md).

@@ -21,7 +21,7 @@
   "mcpServers": "./codex.mcp.json",
   "interface": {
     "displayName": "Wind Stream",
-    "shortDescription": "Ask Wind Stream what your team decided. Brings your organization's sessions, decisions and shared context into your coding agent.",
+    "shortDescription": "Ask Wind Stream what your team decided",
     "longDescription": "Wind Stream is your organization's shared memory. This plugin connects your coding agent to it: ask what the team decided and why, search and read past sessions, and start or continue a Wind Stream conversation without leaving your editor or terminal.",
     "developerName": "Wind Stream, Inc.",
     "category": "Productivity",
@@ -33,6 +33,6 @@
     "websiteURL": "https://windstream.ai",
     "privacyPolicyURL": "https://windstream.ai/privacy-policy",
     "termsOfServiceURL": "https://windstream.ai/terms-of-service",
-    "defaultPrompt": "Ask Wind Stream what the team has decided about this"
+    "defaultPrompt": "Ask Wind Stream what the team has been working on"
   }
 }

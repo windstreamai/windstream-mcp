@@ -17,7 +17,7 @@ server is connected.
 | Ask a question or discuss a topic | `conversation` |
 | Find something across sessions | `ws_search`, then `ws_fetch` for detail |
 | Read a specific session or asset | `ws_fetch` with its reference |
-| See recent sessions | `ws_list` |
+| See recent sessions | `ws_list` with `scope: "recent"` |
 | Start a new session | `ws_create`, or `conversation` with no reference |
 | Branch from an existing session | `ws_branch` |
 
@@ -28,7 +28,8 @@ server is connected.
    Omit `reference` to start a new session.
 2. Pass the user's words as `message`. Do not rephrase or filter them.
 3. If the question is about local files or code, read them and pass the relevant
-   content as `context`.
+   content as `context`. Tell the user which files you are sending: what you pass is
+   saved to a session their team can see.
 
 If Wind Stream reports that several sessions match, show the options to the user and
 let them choose. Then send the original message again with the chosen `reference` and

@@ -1,0 +1,20 @@
+{
+  "note": "Files listed here are written by Wind Stream's publish tooling. Do not edit them by hand.",
+  "version": "1.0.0",
+  "files": [
+    ".agents/plugins/marketplace.json",
+    ".claude-plugin/marketplace.json",
+    ".generated.json",
+    "LICENSE.md",
+    "README.md",
+    "docs/claude-code.md",
+    "docs/codex.md",
+    "plugins/windstream/.claude-plugin/plugin.json",
+    "plugins/windstream/.codex-plugin/plugin.json",
+    "plugins/windstream/.mcp.json",
+    "plugins/windstream/README.md",
+    "plugins/windstream/codex.mcp.json",
+    "plugins/windstream/skills/ask/SKILL.md",
+    "plugins/windstream/skills/organizational-context/SKILL.md"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "windstream": {
+      "type": "http",
+      "url": "https://app.windstream.ai/api/mcp",
+      "bearer_token_env_var": "WINDSTREAM_TOKEN",
+      "tool_timeout_sec": 360
+    }
+  }
+}

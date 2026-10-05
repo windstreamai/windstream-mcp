@@ -29,5 +29,6 @@ https://github.com/windstreamai/windstream-mcp
 
 ## Support and terms
 
-success@windstream.ai. Use is governed by the Wind Stream Terms of Service
-(https://windstream.ai/terms-of-service); see [LICENSE.md](LICENSE.md).
+success@windstream.ai. Use is governed by the Wind Stream terms
+(https://windstream.ai/terms-of-service) and, in addition, by your organization's own
+license agreement with Wind Stream; see [LICENSE.md](LICENSE.md).

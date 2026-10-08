@@ -1,0 +1,38 @@
+{
+  "name": "windstream",
+  "version": "1.0.0",
+  "description": "Ask Wind Stream what your team decided. Brings your organization's sessions, decisions and shared context into your coding agent.",
+  "author": {
+    "name": "Wind Stream, Inc.",
+    "email": "success@windstream.ai",
+    "url": "https://windstream.ai"
+  },
+  "homepage": "https://windstream.ai",
+  "repository": "https://github.com/windstreamai/windstream-mcp",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": [
+    "windstream",
+    "organizational-memory",
+    "team-context",
+    "decisions",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./codex.mcp.json",
+  "interface": {
+    "displayName": "Wind Stream",
+    "shortDescription": "Ask Wind Stream what your team decided",
+    "longDescription": "Wind Stream is your organization's shared memory. This plugin connects your coding agent to it: ask what the team decided and why, search and read past sessions, and start or continue a Wind Stream conversation without leaving your editor or terminal.",
+    "developerName": "Wind Stream, Inc.",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://windstream.ai",
+    "privacyPolicyURL": "https://windstream.ai/privacy-policy",
+    "termsOfServiceURL": "https://windstream.ai/terms-of-service",
+    "defaultPrompt": "Ask Wind Stream what the team has been working on"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "windstream",
+  "version": "1.0.0",
+  "description": "Ask Wind Stream what your team decided. Brings your organization's sessions, decisions and shared context into your coding agent.",
+  "author": {
+    "name": "Wind Stream, Inc.",
+    "email": "success@windstream.ai",
+    "url": "https://windstream.ai"
+  },
+  "homepage": "https://windstream.ai",
+  "repository": "https://github.com/windstreamai/windstream-mcp",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": [
+    "windstream",
+    "organizational-memory",
+    "team-context",
+    "decisions",
+    "mcp"
+  ],
+  "displayName": "Wind Stream",
+  "privacyPolicyUrl": "https://windstream.ai/privacy-policy",
+  "termsOfServiceUrl": "https://windstream.ai/terms-of-service",
+  "userConfig": {
+    "token": {
+      "type": "string",
+      "title": "Wind Stream MCP token",
+      "description": "Generate a token in Wind Stream under Settings, API Tokens, and paste it here.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "windstream",
+  "owner": {
+    "name": "Wind Stream, Inc.",
+    "email": "success@windstream.ai"
+  },
+  "description": "Official Wind Stream plugins.",
+  "plugins": [
+    {
+      "name": "windstream",
+      "source": "./plugins/windstream",
+      "description": "Ask Wind Stream what your team decided. Brings your organization's sessions, decisions and shared context into your coding agent.",
+      "category": "productivity"
+    }
+  ]
+}

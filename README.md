@@ -1,11 +1,11 @@
-# Wind Stream plugin
+# Wind Stream MCP
 
-Wind Stream is your organization's shared memory: the conversations, decisions and
-context your team builds up. This plugin connects your coding agent to it, so you can
-ask what the team decided, and why, without leaving your work.
+Wind Stream's AI Product Factory delivers a connected experience across product 
+from design to delivery. Connect Wind Stream team conversations to Claude Code,
+Code, Claude, Figma Agent, or anywhere that supports MCP.
 
-It supports **Claude Code** and **Codex** (tested with Claude Code 2.1.289 and Codex
-CLI 0.160.0).
+Complete work through coding agents, copilot pipelines, or Wind Stream's fully
+automated and supervised factory service.
 
 ## What you get
 

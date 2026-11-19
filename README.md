@@ -76,8 +76,8 @@ success@windstream.ai
 ## License
 
 See [LICENSE.md](LICENSE.md). Use is governed by the
-[Wind Stream terms](https://windstream.ai/terms-of-service) and, in addition, by your
+[Wind Stream terms](https://windstream.ai/legal/terms-of-service) and, in addition, by your
 organization's own license agreement with Wind Stream.
 
-- Privacy: https://windstream.ai/privacy-policy
-- Data processing: https://windstream.ai/data-processing-addendum
+- Privacy: https://windstream.ai/legal/privacy-policy
+- Data processing: https://windstream.ai/legal/data-processing-addendum
